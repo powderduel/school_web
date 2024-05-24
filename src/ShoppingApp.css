@@ -1,0 +1,35 @@
+.shopping-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.shopping-table th,
+.shopping-table td {
+  text-align: center;
+  padding: 8px;
+}
+
+.checkbox-cell {
+  text-align: right;
+}
+
+.quantity-input {
+  width: 40px;
+  margin-left: 5px;
+}
+
+.purchase-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.purchase-button:hover {
+  background-color: #0056b3;
+}
