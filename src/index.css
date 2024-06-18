@@ -54,7 +54,9 @@ button {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 1em;
-  width: 100%;
+  width: 140px;
+  height: 35px;
+  font-size: 1em;
 }
 
 input[type="submit"]:hover,

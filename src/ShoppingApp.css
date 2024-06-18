@@ -94,7 +94,7 @@ input[type="number"] {
   margin: 0 0.2em;
   cursor: pointer;
   border-radius: 4px;
-  width: 90px;
+  width: 120px;
   height: 50px;
 }
 
@@ -113,8 +113,9 @@ input[type="number"] {
   margin: 0 0.2em;
   cursor: pointer;
   border-radius: 4px;
-  width: 90px;
-  height: 50px;
+  width: 140px;
+  height: 35px;
+  font-size: 1em;
 }
 
 .pagination button.active {
@@ -131,6 +132,6 @@ input[type="number"] {
 
 @media (max-width: 1199px) {
   .content {
-    padding: 1em; /* 为较小屏幕减少内边距 */
+    padding: 1em;
   }
 }
