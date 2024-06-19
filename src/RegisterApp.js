@@ -1,4 +1,5 @@
 import React from "react";
+import "./RegisterApp.css";
 
 class RegisterApp extends React.Component {
   constructor(props) {
@@ -38,7 +39,7 @@ class RegisterApp extends React.Component {
     const { username, password, confirmPassword, email } = this.state;
 
     return (
-      <div>
+      <div className="container">
         <h1>註冊頁面</h1>
         <form onSubmit={this.handleSubmit}>
           <div>

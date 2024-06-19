@@ -1,35 +1,137 @@
-.shopping-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #ddd;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.shopping-table th,
-.shopping-table td {
+.content {
+  background: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 8px;
+  width: 150vh;
+  margin: 0 auto;
 }
 
-.checkbox-cell {
-  text-align: right;
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: #333;
 }
 
-.quantity-input {
-  width: 40px;
-  margin-left: 5px;
+p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 1.5em;
 }
 
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.product-card {
+  background: #fff;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 40vh;
+  height: 15vh;
+}
+
+.product-card img.product-image {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+.product-card h2 {
+  font-size: 1.1em;
+  margin: 0.5em 0;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 1em;
+  color: #666;
+  margin: 0.5em 0;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 0.3em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.purchase {
+  margin-top: 1em;
+}
 .purchase-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
+  background-color: #28a745;
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  margin: 0 0.2em;
   cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  width: 120px;
+  height: 50px;
 }
 
 .purchase-button:hover {
+  background-color: #218838;
+}
+
+.pagination {
+  margin-top: 1em;
+}
+
+.pagination button {
+  background-color: #28a745;
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  margin: 0 0.2em;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 140px;
+  height: 35px;
+  font-size: 1em;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.pagination button:hover {
   background-color: #0056b3;
+  color: #fff;
+  border-color: #0056b3;
+}
+
+@media (max-width: 1199px) {
+  .content {
+    padding: 1em;
+  }
 }
